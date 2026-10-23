@@ -1,1 +1,4 @@
-window.APP_CONFIG = { url: "COLE_A_URL_DO_SUPABASE", anonKey: "COLE_A_CHAVE_PUBLICA_ANON" };
+window.APP_CONFIG = {
+    url: "https://ztkipckyqisnepqvasjy.supabase.co",
+    anonKey: "sb_publishable_9eQesttoOd70V2cv-D-2Dg_tVjhlqPi"
+};
