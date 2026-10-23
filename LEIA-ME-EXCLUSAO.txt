@@ -1,0 +1,10 @@
+EXCLUSÃO DE SOLICITAÇÕES — INSTALAÇÃO
+
+1. No Supabase, abra SQL Editor e execute habilitar-exclusao.sql.
+2. No projeto local, substitua painel.html, app.js e extras.css pelos arquivos atualizados.
+3. Adicione habilitar-exclusao.sql ao repositório apenas se desejar guardar a documentação da mudança.
+4. Faça Commit e Push pelo GitHub Desktop.
+5. No painel publicado, entre como administrador, clique em Excluir e confirme.
+6. Verifique que a solicitação desapareceu após Atualizar lista e no outro computador.
+
+IMPORTANTE: a exclusão é definitiva. Faça o teste com solicitações fictícias.
