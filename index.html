@@ -1,1 +1,63 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Portal do Cidadão | Solicitações</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="extras.css"></head><body><header><div class="topline">ATENDIMENTO MUNICIPAL <span>PORTAL DO CIDADÃO</span></div><h1>Solicitações da cidade</h1><p>Envie um pedido de serviço público de maneira simples e rápida.</p></header><main><section class="panel"><div class="eyebrow">NOVA SOLICITAÇÃO</div><h2>Como podemos ajudar?</h2><p class="muted">Preencha os dados abaixo. Ao enviar, você receberá um protocolo de registro.</p><form id="formSolicitacao"><div class="grid"><div class="field"><label for="nome">Nome completo *</label><input id="nome" name="nome" required maxlength="120" autocomplete="name"></div><div class="field"><label for="telefone">Telefone *</label><input id="telefone" name="telefone" required maxlength="25" type="tel" autocomplete="tel" placeholder="(00) 00000-0000"></div><div class="field full"><label for="endereco">Endereço do problema *</label><input id="endereco" name="endereco" required maxlength="200" placeholder="Rua, número, bairro e ponto de referência"></div><div class="field full"><label for="tipo">Categoria *</label><select id="tipo" name="tipo" required><option value="">Selecione a categoria</option><option>Iluminação pública</option><option>Buraco em via pública</option><option>Poda de árvores</option><option>Limpeza urbana</option><option>Saneamento</option><option>Outros</option></select></div><div class="field full"><label for="descricao">O que precisa ser feito? *</label><textarea id="descricao" name="descricao" required minlength="10" maxlength="1500" placeholder="Descreva o problema e como a prefeitura pode ajudar."></textarea></div></div><p class="small">* Campos obrigatórios. Projeto acadêmico: utilize dados fictícios durante a apresentação.</p><button id="enviar" type="submit">Enviar solicitação →</button></form><div id="resultado" class="notice" role="status" aria-live="polite" hidden></div></section><section class="panel"><h2>Após o envio</h2><p class="muted">Seu pedido será encaminhado para a equipe responsável. Guarde o protocolo informado ao finalizar o cadastro.</p></section></main><footer>Projeto acadêmico · Portal de Solicitações Municipais</footer><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script><script src="config.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portal do Cidadão | Solicitações</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="extras.css">
+    <link rel="icon" type="image/png" href="android-chrome-512x512.png">
+</head>
+
+<body>
+    <header>
+        <div class="topline">ATENDIMENTO MUNICIPAL <span>PORTAL DO CIDADÃO</span></div>
+        <h1>Solicitações da cidade</h1>
+        <p>Envie um pedido de serviço público de maneira simples e rápida.</p>
+    </header>
+    <main>
+        <section class="panel">
+            <div class="eyebrow">NOVA SOLICITAÇÃO</div>
+            <h2>Como podemos ajudar?</h2>
+            <p class="muted">Preencha os dados abaixo. Ao enviar, você receberá um protocolo de registro.</p>
+            <form id="formSolicitacao">
+                <div class="grid">
+                    <div class="field"><label for="nome">Nome completo *</label><input id="nome" name="nome" required
+                            maxlength="120" autocomplete="name"></div>
+                    <div class="field"><label for="telefone">Telefone *</label><input id="telefone" name="telefone"
+                            required maxlength="25" type="tel" autocomplete="tel" placeholder="(00) 00000-0000"></div>
+                    <div class="field full"><label for="endereco">Endereço do problema *</label><input id="endereco"
+                            name="endereco" required maxlength="200"
+                            placeholder="Rua, número, bairro e ponto de referência"></div>
+                    <div class="field full"><label for="tipo">Categoria *</label><select id="tipo" name="tipo" required>
+                            <option value="">Selecione a categoria</option>
+                            <option>Iluminação pública</option>
+                            <option>Buraco em via pública</option>
+                            <option>Poda de árvores</option>
+                            <option>Limpeza urbana</option>
+                            <option>Saneamento</option>
+                            <option>Outros</option>
+                        </select></div>
+                    <div class="field full"><label for="descricao">O que precisa ser feito? *</label><textarea
+                            id="descricao" name="descricao" required minlength="10" maxlength="1500"
+                            placeholder="Descreva o problema e como a prefeitura pode ajudar."></textarea></div>
+                </div>
+                <p class="small">* Campos obrigatórios. Projeto acadêmico: utilize dados fictícios durante a
+                    apresentação.</p><button id="enviar" type="submit">Enviar solicitação →</button>
+            </form>
+            <div id="resultado" class="notice" role="status" aria-live="polite" hidden></div>
+        </section>
+        <section class="panel">
+            <h2>Após o envio</h2>
+            <p class="muted">Seu pedido será encaminhado para a equipe responsável. Guarde o protocolo informado ao
+                finalizar o cadastro.</p>
+        </section>
+    </main>
+    <footer>Projeto acadêmico · Portal de Solicitações Municipais</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
