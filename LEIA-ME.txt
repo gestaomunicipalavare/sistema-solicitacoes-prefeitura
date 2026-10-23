@@ -1,0 +1,19 @@
+SISTEMA DE SOLICITAÇÕES - CONFIGURAÇÃO
+
+1. Crie um projeto gratuito no Supabase (supabase.com).
+2. No SQL Editor, execute o conteúdo de supabase.sql.
+3. Em Authentication > Users, crie o usuário administrativo com e-mail e senha.
+4. Copie o UUID desse usuário. Execute no SQL Editor:
+   insert into public.administradores(usuario_id) values ('COLE-O-UUID-AQUI');
+5. Em Project Settings > API (ou Connect), copie a Project URL e a chave pública anon/publishable.
+6. Preencha config.js. NUNCA coloque a chave service_role/secret nesse arquivo.
+7. Envie index.html, painel.html, style.css, extras.css, app.js e config.js ao GitHub Pages.
+8. No computador do cidadão, abra index.html publicado; no computador da prefeitura, painel.html publicado.
+9. Faça login administrativo no painel. Ao enviar um pedido, ele aparecerá em até 12 segundos (ou clique em Atualizar lista).
+
+IMPORTANTE
+- Dados ficam no Supabase, não no navegador; os dois computadores precisam de internet.
+- Não há link público do painel no Portal do Cidadão. Mesmo que alguém descubra o endereço, a leitura é bloqueada pelas políticas de acesso.
+- Projeto acadêmico: use dados fictícios. Para uso público real, implementar antispam/rate limiting, consentimento LGPD, políticas de retenção e medidas adicionais de segurança.
+- A hospedagem no GitHub Pages não hospeda banco de dados.
+- Não inclua a pasta .git no upload; este ZIP não contém histórico Git.

@@ -1,0 +1,1 @@
+window.APP_CONFIG = { url: "COLE_A_URL_DO_SUPABASE", anonKey: "COLE_A_CHAVE_PUBLICA_ANON" };
